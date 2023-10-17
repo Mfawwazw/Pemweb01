@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form Pemesanan Pizza</title>
+</head>
+<body>
+  <h1>Black Goose Bistro | Pizza-on -demand</h1>
+  <p>Our 12" wood-fired pizzas are available for delivery.build your custom pizza and we'll deliver it within an hour</p>
+  <p>Your Information</p>
+  
+  <form action="http://blackgoosebistro.com/pizza.php" method="post">
+    <table>
+      <tr>
+        <td>Name: </td>
+        <td>
+          <input type="text" name="customername"></td>
+      </tr>
+      <tr>
+        <td>address: </td>
+        <td>
+          <textarea name="address" cols="30" rows="5"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>Telp: </td>
+        <td>
+          <input type="number" name="telephone">
+        </td>
+      </tr>
+      <tr>
+        <td>Email: </td>
+        <td>
+          <input type="email" name="email">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Delivery instructions:
+        </td>
+        <td>
+          <textarea name="instructions" id="" cols="30" rows="5"></textarea>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <b>Design Your Dream Pizza:</b>
+      <br>
+      Pizza Specs
+    </p>
+    <dt> Crust(Choose One):</dt>
+   
+     <input type="radio" name="crust" value="Classic White"> Classic White
+    <input type="radio" name="crust" value="Multigrain"> Multigrain
+    <input type="radio" name="crust" value="Cheese Stuffed"> Cheese Stuffed
+   <input type="radio" name="crust" value="Gluten Free"> Gluten Free
+   <br>
+   <br>
+   
+   <dt>Toppings(Choose as much as you want) </dt>
+   <input type="checkbox" name="toppings[]" value="redcsauce">Red sauce
+   <input type="checkbox" name="toppings[]" value="white sauce">White sauce
+   <input type="checkbox" name="toppings[]" value="Mozzarella">Mozzarella
+   <br>
+   <br>
+   
+   <dt>Number</dt>
+   <label>How many pizzas: </label>
+   <select name="pizzas">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+   </select>
+   <br>
+   <br>
+   
+   <input type="submit" value="Bring me a pizza">
+   <input type="reset">
+
+  </form>
+  
+  
+  
+</body>
+</html>

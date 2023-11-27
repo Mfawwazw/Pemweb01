@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flexbox tugas 8</title>
+</head>
+
+
+<style>
+  body{
+    margin: 0;
+    padding: 20px 200px;
+  }
+  
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav {
+    background-color: pink;
+    padding: 20px;
+    width: 150px;
+    height: 462.5px;
+  }
+  
+  header,footer{
+    background-color: #80aa01;
+    padding: 20px;
+    width: 620px;
+  }
+  
+  .isi{
+    display: flex;
+  }
+  
+  article{
+    background-color: white;
+    padding: 20px;
+    width: 420px;
+    height: 334px;
+  }
+  
+  aside{
+    background-color: #50ffff;
+    padding: 20px;
+    width: 160px;
+  }
+  
+</style>
+
+
+
+
+<body>
+  <div class="container">
+    <nav>Nav</nav>
+    <div class="content">
+      <header>Header</header>
+      <div class="isi">
+        <article>Article</article>
+        <aside>Aside</aside>
+      </div>
+      <footer>Footer</footer>
+    </div>
+  </div>
+</body>
+</html>

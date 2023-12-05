@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">eSem.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 me-4 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Seminar</a>
+          </li>
+          
+                  <li class="nav-item">
+            <a class="nav-link" href="#">Workshop</a>
+          </li>
+  
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <a href="form_registrasi.html" class="ms-auto btn btn-success">Daftar</a>
+      </div>
+    </div>
+  </nav>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<form>
+  <div class="form-group row">
+    <label for="nama" class="col-4 col-form-label">Nama Lengkap</label> 
+    <div class="col-8">
+      <input id="nama" name="nama" type="text" class="form-control" required="required">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="tempat lahir" class="col-4 col-form-label">Tempat Lahir</label> 
+    <div class="col-8">
+      <input id="tempat lahir" name="tempat lahir" type="text" required="required" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="tgl lahir" class="col-4 col-form-label">Tanggal Lahir</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <input id="tgl lahir" name="tgl lahir" type="text" required="required" class="form-control"> 
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <i class="fa fa-calendar"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4">Gender</label> 
+    <div class="col-8">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="gender" id="gender_0" type="radio" class="custom-control-input" value="L" required="required"> 
+        <label for="gender_0" class="custom-control-label">Laki-laki</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="gender" id="gender_1" type="radio" class="custom-control-input" value="P" required="required"> 
+        <label for="gender_1" class="custom-control-label">Perempuan</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="email" class="col-4 col-form-label">Email</label> 
+    <div class="col-8">
+      <input id="email" name="email" type="text" class="form-control" required="required">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="status" class="col-4 col-form-label">Status Peserta</label> 
+    <div class="col-8">
+      <select id="status" name="status" class="custom-select" required="required">
+        <option value="">-- Pilih Status --</option>
+        <option value="pelajar">Pelajar/Mahasiswa</option>
+        <option value="pekerja">Pekerja</option>
+      </select>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+  
+</body>
+</html>
